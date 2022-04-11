@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static("public"));
 
-const port: number = 5454;
+const PORT: (string | number) = process.env.PORT || 7894;
 
 interface Card {
     similarNum: number
@@ -81,6 +81,6 @@ app.get('/check', (req, res) => {
     }
 })
 
-app.listen(port, () => {
-    console.log(`Server listen on port http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(`Server listen on port http://localhost:${PORT}`);
 });
