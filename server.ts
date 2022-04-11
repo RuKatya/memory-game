@@ -30,10 +30,6 @@ function shuffleCards(arr) {
     return arr.sort(() => Math.round(Math.random() * 100) - 50);
 }
 
-app.get('/', (req, res) => {
-    res.sendFile('index.html')
-})
-
 app.post('/get-data', (req, res) => {
     const { numOfCards } = req.body
     console.log(numOfCards)
