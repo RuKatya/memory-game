@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./style/dist/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="chooseLevelOfGame">
+        <h1>Let's play a game</h1>
+        <h2>Choose level of game:</h2>
+        <button onclick="hendleNumbersOfCards(4)">Easy</button>
+        <button onclick="hendleNumbersOfCards(8)">Medium</button>
+        <button onclick="hendleNumbersOfCards(12)">Hard</button>
+
+
+    </div>
+
+    <div class="gameInfo">
+        <div class="gameInfo__time"></div>
+        <div class="gameInfo__score"></div>
+        <div class="gameInfo__reset"></div>
+    </div>
+
+    <div class="cards"></div>
+    <div class="winner">
+    </div>
+
+
+    <script src="./dist/index.js"></script>
+</body>
+
+</html>
