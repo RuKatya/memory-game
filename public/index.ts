@@ -19,6 +19,7 @@ let minutes: number = 0;
 async function hendleNumbersOfCards(numOfCards) {
     console.log(numOfCards)
     const { data } = await axios.post('/get-data', { numOfCards })
+    // const { data1 } = await axios.get('/get-data', { numOfCards })
 
     dataGame = data
     console.log(dataGame)
